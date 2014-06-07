@@ -67,6 +67,8 @@ object TweetReader {
 
   val tweetSets: List[TweetSet] = sources.map(tweets => toTweetSet(tweets))
   
+  //tweetSets.foreach(tweetSet => tweetSet.printMe(""))
+  
   private val siteTweetSetMap: Map[String, TweetSet] =
     Map() ++ (sites zip tweetSets)
 
